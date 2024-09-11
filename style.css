@@ -1,0 +1,176 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3e5f5;
+    color: #212121;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, p {
+    margin: 0 0 20px 0;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #6a1b9a;
+  }
+  
+  .navbar-brand {
+    color: #ffffff !important;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    color: #f3e5f5 !important;
+    font-weight: 500;
+  }
+  
+  .nav-link.active {
+    color: #ffffff !important;
+    background-color: transparent;
+  }
+  
+  .nav-link:hover {
+    color: #f48fb1 !important;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #6a1b9a;
+    color: #ffffff;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .hero .lead {
+    font-size: 1.2rem;
+  }
+  
+  .hero .btn {
+    background-color: #ffffff;
+    color: #6a1b9a;
+    font-weight: bold;
+  }
+  
+  .hero .btn:hover {
+    background-color: #f48fb1;
+    color: #ffffff;
+  }
+  
+  /* About Section */
+  #about {
+    background-color: #ffffff;
+    padding: 50px 0;
+  }
+  
+  #about h2 {
+    color: #6a1b9a;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  
+  /* Schedule Section */
+  #schedule {
+    background-color: #f3e5f5;
+    padding: 50px 0;
+  }
+  
+  #schedule h2 {
+    color: #6a1b9a;
+    text-transform: uppercase;
+  }
+  
+  .list-group-item {
+    background-color: #ffffff;
+    color: #212121;
+    border: none;
+    margin-bottom: 10px;
+  }
+  
+  /* Prizes Section */
+  #prizes {
+    background-color: #ffffff;
+    padding: 50px 0;
+  }
+  
+  #prizes h2 {
+    color: #6a1b9a;
+    text-transform: uppercase;
+  }
+  
+  .card {
+    background-color: #f48fb1;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  /* Registration Section */
+  #register {
+    background-color: #6a1b9a;
+    color: #ffffff;
+    padding: 50px 0;
+  }
+  
+  #register h2 {
+    text-transform: uppercase;
+  }
+  
+  .form-label {
+    color: #ffffff;
+  }
+  
+  .form-control, .form-select {
+    background-color: #ffffff;
+    color: #6a1b9a;
+    border: none;
+  }
+  
+  .btn-light {
+    background-color: #f48fb1;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .btn-light:hover {
+    background-color: #ffffff;
+    color: #6a1b9a;
+    border: 2px solid #f48fb1;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #6a1b9a;
+    color: #ffffff;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+    .hero .lead {
+      font-size: 1rem;
+    }
+    #about h2, #schedule h2, #prizes h2, #register h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
