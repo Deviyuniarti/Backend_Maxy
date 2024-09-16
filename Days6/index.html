@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Feedback</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <span class="fs-4">Feedback</span>
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          </ul>
+        </header>
+
+        <!-- Form Section -->
+        <div class="container mt-5">
+            <h4 class="mb-3">Feedback Form</h4>
+            <form>
+                <div class="mb-3">
+                    <label for="feedbackName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="feedbackName" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="feedbackEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="feedbackEmail" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="feedbackComments" class="form-label">Your Feedback</label>
+                    <textarea class="form-control" id="feedbackComments" rows="4" placeholder="Your comments" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="feedbackRating" class="form-label">Rating</label>
+                    <select class="form-select" id="feedbackRating" required>
+                        <option value="">Choose...</option>
+                        <option value="1">1 - Poor</option>
+                        <option value="2">2 - Fair</option>
+                        <option value="3">3 - Good</option>
+                        <option value="4">4 - Very Good</option>
+                        <option value="5">5 - Excellent</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-warning">Submit Feedback</button>
+            </form>
+        </div>        
+    </div>
+</body>
+</html>
