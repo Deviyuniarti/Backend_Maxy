@@ -1,0 +1,86 @@
+/* Styling for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Styling for the box container */
+.box-container {
+    background-color: #d3f0df; 
+    padding: 40px; 
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px; 
+    margin: 0 auto; 
+}
+
+/* Styling for the alarm container */
+.alarm-container {
+    background-color: #ffffff;
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 30px; 
+}
+
+/* Styling the title */
+.main-title h1 {
+    font-size: 1.8em; 
+    color: #0a0a0a;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling the form */
+.alarm-label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.alarm-input {
+    width: 100%;
+    padding: 12px; 
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px; 
+    box-sizing: border-box;
+}
+
+.alarm-button {
+    width: 100%;
+    padding: 12px; 
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em; 
+    cursor: pointer;
+}
+
+.alarm-button:hover {
+    background-color: #218838;
+}
+
+/* Styling for the status message */
+#status {
+    margin-top: 20px; 
+    font-size: 1.2em;
+    color: #28a745;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .box-container {
+        width: 90%;
+    }
+}

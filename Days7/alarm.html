@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main> 
+        <!-- Tambahkan box-container -->
+        <div class="box-container">
+            <header class="main-title">
+                <h1>Code Alarm 
+                    <br>by Devi Yuniarti
+                </h1>
+            </header>
+            <div class="alarm-container">
+                <label for="alarmTime" class="alarm-label">Set Alarm (HH:MM):</label>
+                <input type="time" id="alarmTime" class="alarm-input">
+                <button id="setAlarmButton" class="alarm-button">Set Alarm</button>
+                <h2 id="status"></h2>
+            </div>
+        </div>
+
+        <script>
+            // Function to set the alarm
+            function setAlarm() {
+                const alarmTime = document.getElementById('alarmTime').value;
+                const statusDisplay = document.getElementById('status');
+    
+                if (!alarmTime) {
+                    statusDisplay.innerText = "Please set a valid alarm time.";
+                    return;
+                }
+    
+                statusDisplay.innerText = `Alarm set for ${alarmTime}.`;
+    
+                // Check the alarm every second
+                const alarmInterval = setInterval(() => {
+                    const currentTime = new Date();
+                    const currentHours = String(currentTime.getHours()).padStart(2, '0');
+                    const currentMinutes = String(currentTime.getMinutes()).padStart(2, '0');
+                    const currentFormattedTime = `${currentHours}:${currentMinutes}`;
+    
+                    if (currentFormattedTime === alarmTime) {
+                        clearInterval(alarmInterval);
+                        alert('Alarm ringing!');
+                        statusDisplay.innerText = "Alarm ringing!";
+                    }
+                }, 1000);
+            }
+    
+            document.getElementById('setAlarmButton').addEventListener('click', setAlarm);
+        </script>
+    </main>
+</body>
+</html>
