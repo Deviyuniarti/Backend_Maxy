@@ -1,0 +1,41 @@
+body {
+    background-color: #f0f4f8;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+.table {
+    width: 100%; 
+    margin-bottom: 0; 
+}
+
+.table th, .table td {
+    text-align: center; 
+    vertical-align: middle; 
+    padding: 12px; 
+    background-color: #f7fbff;
+}
+
+th {
+    background-color: #c9daf8; 
+    color: #333333; 
+    text-align: center; 
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #d9e2ec; 
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e2edf8;
+}
+
+thead.thead-dark th {
+    background-color: #b3cde0; 
+    color: #333333; 
+}
+
