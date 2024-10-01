@@ -58,8 +58,8 @@
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <style>
         body {
-            background: linear-gradient(to bottom right, #a8c0ff, #3f2b96);
-        }
+        background: linear-gradient(to bottom right, #EDDFE0, #F5F5F7);
+    }
     </style>
 </head>
 <body class="bg-primary">

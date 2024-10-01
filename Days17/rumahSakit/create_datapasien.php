@@ -8,8 +8,8 @@
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <style>
         body {
-            background: linear-gradient(to bottom right, #a8c0ff, #3f2b96);
-        }
+        background: linear-gradient(to bottom right, #EDDFE0, #F5F5F7);
+    }
     </style>
 </head>
 <body>
@@ -26,8 +26,7 @@
         <div class="card shadow">
             <div class="card-body">
                 <form action="index.php" method="POST">
-                    <input type="hidden" name="id_pasien" value=""> <!-- Field hidden untuk update -->
-                    
+                    <input type="hidden" name="id_pasien" value=""> 
                     <div class="form-group mb-3">
                         <label for="nama_pasien">Nama Pasien</label>
                         <input type="text" name="nama_pasien" id="nama_pasien" class="form-control" required>
