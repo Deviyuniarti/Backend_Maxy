@@ -46,15 +46,15 @@
                                         <td><?= $row['tanggal_masuk'] ?></td>
                                         <td><?= $row['nomor_hp'] ?></td>
                                         <td>
-                                            <a class="btn btn-info btn-sm btn-action" href="view_datapasien.php?id_pasien=<?= $row['id_pasien'] ?>">
-                                                <i class="fas fa-eye"></i> View
+                                            <a class="btn btn-primary btn-sm btn-action" href="view_datapasien.php?id_pasien=<?= $row['id_pasien'] ?>">
+                                                <i class="fa fa-eye"></i>  View
                                             </a>
-                                            <a class="btn btn-info btn-sm" href="edit_datapasien.php?id_pasien=<?= $row['id_pasien'] ?>">
-                                                <i class="fas fa-edit"></i> Edit
+                                            <a class="btn btn-warning btn-sm" href="edit_datapasien.php?id_pasien=<?= $row['id_pasien'] ?>">
+                                                <i class="fa fa-edit"></i> Edit
                                             </a>
-                                            <a class="btn btn-info btn-sm" href="delete_datapasien.php?iddel=<?= $row['id_pasien'] ?>" 
+                                            <a class="btn btn-danger btn-sm" href="delete_datapasien.php?iddel=<?= $row['id_pasien'] ?>" 
                                             onclick="if(!confirm('Anda Yakin Hapus Data Pasien <?= $row['nama_pasien'] ?>?')) {return false}">
-                                                <i class="fas fa-trash-alt"></i> Delete
+                                                <i class="fa fa-trash"></i> Delete
                                             </a>
                                         </td>
                                     </tr>
@@ -66,13 +66,14 @@
             </div>
         </main>
     </div>
-  
-</body>
-</html>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
     <script src="assets/demo/chart-area-demo.js"></script>
     <script src="assets/demo/chart-bar-demo.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
     <script src="js/datatables-simple-demo.js"></script>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</body>
+</html>
+  

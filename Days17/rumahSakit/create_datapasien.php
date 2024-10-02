@@ -25,7 +25,7 @@
         </div>
         <div class="card shadow">
             <div class="card-body">
-                <form action="index.php" method="POST">
+            <form method="POST" action="proses_datapasien.php">
                     <input type="hidden" name="id_pasien" value=""> 
                     <div class="form-group mb-3">
                         <label for="nama_pasien">Nama Pasien</label>
